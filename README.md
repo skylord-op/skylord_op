@@ -2,7 +2,7 @@
 <img src="https://telegra.ph/file/3f79ca923137a181ab4c3.jpg" </p>
 
  </p>
-<p align="center"><h1>MBL USERBOT™<h1>
+<p align="center"><h1>SKYLORD USER BOT™<h1>
   
   ##THIS IS THE BEST BOT FOR TELEGRAM FOR ANY HELP JOIN THE HELP CHANNEL AND HELP GROUP...........
   
