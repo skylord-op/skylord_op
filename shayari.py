@@ -1,4 +1,4 @@
-
+#thanks to @kraken_the_badass for the plugin (hell bot owner)
 """ Making A Shayri... 
     Command .rshayri
     By @koi_nhi_apna """
