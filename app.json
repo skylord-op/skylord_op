@@ -2,7 +2,7 @@
 {
   "name": "SKYLORD USER BOT",
   "description": "The best userbot made by @koi_nhi_apna . Made with Love And Phone And Hardwork and   For Support Join @skylord_help_chat ",
-  "logo": "https://telegra.ph/file/7decf235312af8536e9aa.jpg ",
+  "logo": "https://telegra.ph/file/a3cf0be8a8336aa3d1b1f.jpg ",
     "keywords": [
     "telegram",
     "userbot",
@@ -24,17 +24,17 @@
       "required": false
     },
     "ALIVE_NAME": {
-      "description": "Fill your Full name. By default it is Hell User",
+      "description": "Fill your Full name. By default it is skylord User",
       "value": "",
       "required": false
     },
     "ALIVE_MSG": {
-      "description": "Set Custom Alive Message When entering .hell Command.",
+      "description": "Set Custom Alive Message When entering .sky Command.",
       "value": "",
       "required": false
     },
     "ALIVE_PIC": {
-      "description": "Put here any telegraph media link for alive pic in .hell command.",
+      "description": "Put here any telegraph media link for alive pic in .sky command.",
       "value": "",
       "required": false
     },
