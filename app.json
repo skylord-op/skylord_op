@@ -28,16 +28,6 @@
       "value": "",
       "required": false
     },
-    "ALIVE_MSG": {
-      "description": "Set Custom Alive Message When entering .sky Command.",
-      "value": "",
-      "required": false
-    },
-    "ALIVE_PIC": {
-      "description": "Put here any telegraph media link for alive pic in .sky command.",
-      "value": "",
-      "required": false
-    },
     "BIO_MSG": {
       "description": "Put Your Telegram Bio Here Required For Auto Bio.",
       "value": "",
