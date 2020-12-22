@@ -7,14 +7,14 @@ from userbot import ALIVE_NAME, ALIVE_PIC
 from telethon.tl.types import ChannelParticipantsAdmins
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "SKYLORD USERBOT"
 
-skylord_PIC="https://telegra.ph/file/3f79ca923137a181ab4c3.jpg"
+SKYLORD_PIC="https://telegra.ph/file/3f79ca923137a181ab4c3.jpg"
 
 if ALIVE_PIC is None:
-    ALIVE_PIC=skylord_PIC
+    ALIVE_PIC=SKYLORD_PIC
 
     ALIVE_PIC=ALIVE_PIC
 
-pm_caption = "**MR IZ 🇲🇧🇱 🇺🇸🇪🇷🇧🇴🇹**\n"
+pm_caption = "**MR IZ SKYLORD 🇺🇸🇪🇷🇧o🇹**\n"
 pm_caption += f"**My Master** => **{DEFAULTUSER}**\n\n"
 pm_caption += f"**{DEFAULTUSER} i am  alive 😁😁😋😋**\n\n"
 pm_caption +=f"**JUST CHILL AND DO WHATEVER YOU WANT TO DO WITH ME😉**\n\n"
