@@ -5,7 +5,7 @@ import time
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 
-from userbot.helpers import functions as simpdef
+from userbot.helper import functions as simpdef
 from var import Var
 
 StartTime = time.time()
