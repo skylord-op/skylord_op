@@ -136,7 +136,7 @@ if bool(ENV):
 
     # Upstream Repo
     UPSTREAM_REPO_URL = os.environ.get(
-        "UPSTREAM_REPO_URL", "https://github.com/skylord-op/skylord_op"
+        "UPSTREAM_REPO_URL", "https://github.com/SKYLORD-OP-op/SKYLORD-OP_op"
     )
 
     # Last.fm Module
