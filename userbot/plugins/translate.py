@@ -16,7 +16,7 @@ async def _(event):
     if event.fwd_from:
         return
     if "trim" in event.raw_text:
-        # https://t.me/skylord_help_chat
+        # https://t.me/SKYLORD-OP_help_chat
         return
     input_str = event.pattern_match.group(1)
     if event.reply_to_msg_id:

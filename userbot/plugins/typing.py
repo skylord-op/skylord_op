@@ -9,7 +9,7 @@ from uniborg.util import admin_cmd
 async def _(event):
     if event.fwd_from:
         return
-    # https://t.me/skylord_help_chat
+    # https://t.me/SKYLORD-OP_help_chat
     input_str = event.pattern_match.group(1)
     shiiinabot = "\u2060"
     for i in range(601):

@@ -1,6 +1,6 @@
 {
-  "name": "skylord",
-  "description": "The best userbot made by @koi_nhi_apna. Made with Love And Phone And Hardwork and... ....For Support Join @skylord_help_chat ",
+  "name": "SKYLORD-OP",
+  "description": "The best userbot made by @koi_nhi_apna. Made with Love And Phone And Hardwork and... ....For Support Join @SKYLORD-OP_help_chat ",
   "logo": "https://telegra.ph/file/a3cf0be8a8336aa3d1b1f.jpg ",
   
   
@@ -13,9 +13,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/skylord-op/skylord_op/",
+  "repository": "https://github.com/SKYLORD-OP-op/SKYLORD-OP_op/",
   "website": "#hehehe",
-  "success_url": "https://t.me/@skylord_help_chat",
+  "success_url": "https://t.me/@SKYLORD-OP_help_chat",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
@@ -101,7 +101,7 @@
        "value": ""
     }, 
     "STRING_SESSION": {
-      "description": "Get this value by running https://repl.it/@userbot2/skylordstringsession ",
+      "description": "Get this value by running https://repl.it/@userbot2/SKYLORD-OPstringsession ",
       "value": ""
     },
     "HEROKU_API_KEY": {
