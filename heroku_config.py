@@ -1,4 +1,4 @@
-#thanks to hell bot for the plugin
+
 import os
 
 
