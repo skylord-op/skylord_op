@@ -52,7 +52,7 @@
 
 
 
-<p align="centre"><a href="https://repl.it/@userbot2/SKYLORD-OPstringsession"> <img src="https://telegra.ph/file/58d69f11540b9f6a20f5f.jpg" alt="RUN ON REPL IT " width="200" height="200.200"/></a></p>
+<p align="centre"><a href="https://repl.it/"> <img src="https://telegra.ph/file/58d69f11540b9f6a20f5f.jpg" alt="RUN ON REPL IT " width="200" height="200.200"/></a></p>
 
 
 
