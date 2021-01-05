@@ -1,7 +1,7 @@
-FROM SKYLORD-OP-op/SKYLORD-OP_op:latest
+FROM skylord-op/skylord_op:latest
 
 #clonning repo 
-RUN git clone https://github.com/SKYLORD-OP-op/SKYLORD-OP_op.git/root/userbot
+RUN git clone https://github.com/skylord-op/skylord_op.git/root/userbot
 #working directory 
 WORKDIR /root/userbot
 
