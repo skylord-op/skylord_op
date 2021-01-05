@@ -54,8 +54,17 @@
 
 <p align="centre"><a href="https://repl.it/"> <img src="https://telegra.ph/file/58d69f11540b9f6a20f5f.jpg" alt="RUN ON REPL IT " width="200" height="200.200"/></a></p>
 
+##THE EASIEST METHOD 
 
+#RUN IN TERMUX
 
+git clone https://github.com/skybot-op/skybot_op
+cd skybot_op
+virtualenv -p /usr/bin/python3 venv
+. ./venv/bin/activate
+pip install -r requirements.txt
+# <Create local_config.py with variables as given below>
+python3 -m userbot
 
 
 ##we will make it more better for your comfort............
