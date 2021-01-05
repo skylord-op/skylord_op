@@ -39,7 +39,7 @@
 ##HEROKU
 ##CLICK ON THE BELOW PIC TO MAKE YOUR OWN USER BOT................
 
-<a href="https://dashboard.heroku.com/new?template=https://github.com/SKYLORD-OP-op/SKYLORD-OP_op/blob/master"><img src="https://telegra.ph/file/04707e81a7c8875a1bd1c.jpg"></a>
+<a href="https://dashboard.heroku.com/new?template=https://github.com/SKYLORD-OP/SKYLORD_op/blob/master"><img src="https://telegra.ph/file/04707e81a7c8875a1bd1c.jpg"></a>
 
 
 
