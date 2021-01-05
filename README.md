@@ -58,13 +58,13 @@
 
 #RUN IN TERMUX
 
-git clone https://github.com/skybot-op/skybot_op
+'git clone https://github.com/skybot-op/skybot_op
 cd skybot_op
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
 # <Create local_config.py with variables as given below>
-python3 -m userbot
+python3 -m userbot'
 
 
 ##we will make it more better for your comfort............
