@@ -74,7 +74,7 @@ pip install -r requirements.txt
     
     [-] API_HASH :   You can get this value from https://my.telegram.org
     
-[+] The skyload_op User Bot will not work without setting the mandatory vars.
+[+] The skylord_op User Bot will not work without setting the mandatory vars.
 ```
 
 
