@@ -1,4 +1,4 @@
-<h2 align="center"><b>Owner: <a href="https://telegram.dog/koi_nhi_apna">戋佮紥猥佛焼咅焻葛焻金焻拆焻答焻金焼夝焻锯嗉掙</a></b></h2>
+<h2 align="center"><b>Owner: <a href="https://telegram.dog/koi_nhi_apna">꧁༒⫷🆅🅸🅽🅲🅴🅽🆉🅾⫸༒꧂</a></b></h2>
 <br>
 <p align="center">
    <a href="http://gitHub.com/skylord-op/skylord_op"><img src="https://telegra.ph/file/3f79ca923137a181ab4c3.jpg" alt="JAVES 2.0" width=400px></a>
@@ -26,8 +26,8 @@
 
 # Support
 
-<a href="https://t.me/Javes2support"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
-<a href="https://t.me/javes_support"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
 
 
