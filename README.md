@@ -48,7 +48,7 @@
 
 
 # Credit
-Special Thanks To Hell_Userbot(https://telegram.dog/HellBot_Official) And Our Contributors
+Special Thanks To [Hell_Userbot](https://telegram.dog/HellBot_Official) And Our Contributors
 
 
 
