@@ -1,6 +1,6 @@
 {
   "name": "SKYLORD-OP",
-  "description": "The best userbot made by @koi_nhi_apna. Made with Love And Phone And Hardwork and... ....For Support Join @SKYLORD-OP_help_chat ",
+  "description": "The best userbot made by @koi_nhi_apna. Made with Love And Phone And Hardwork and... ....For Support Join @Skylord_help_chat ",
   "logo": "https://telegra.ph/file/a3cf0be8a8336aa3d1b1f.jpg ",
   
   
@@ -15,7 +15,7 @@
   ],
   "repository": "https://github.com/SKYLORD-op/SKYLORD_op.git",
   "website": "#hehehe",
-  "success_url": "https://t.me/@SKYLORD-OP_help_chat",
+  "success_url": "https://t.me/SKYLORD_help_chat",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
