@@ -196,4 +196,4 @@ SUDO_LIST = {}
 
 
 from userbot.helper import *
-from userbot.helper import functions as helldef
+from userbot.helper import function as helldef
