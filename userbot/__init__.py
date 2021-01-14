@@ -195,5 +195,5 @@ AFKREASON = None
 SUDO_LIST = {}
 
 
-from userbot.helpers import *
-from userbot.helpers import functions as helldef
+from userbot.helper import *
+from userbot.helper import functions as helldef
