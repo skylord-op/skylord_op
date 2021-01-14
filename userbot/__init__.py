@@ -7,7 +7,7 @@ from telethon.sessions import StringSession
 
 from userbot.helper import function as simpdef
 from var import Var
-from Var import Config
+
 
 StartTime = time.time()
 skyversion = "2.0"
@@ -18,7 +18,7 @@ if Var.STRING_SESSION:
     bot = TelegramClient(StringSession(session_name), Var.APP_ID, Var.API_HASH)
 else:
     session_name = "startup"
-    bot = TelegramClient(session_name, Var.APP_ID, Var.API_HASH)
+    bot = TelegramClient(session_name, APP_ID, API_HASH)
 
 
 CMD_LIST = {}
