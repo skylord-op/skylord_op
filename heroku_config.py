@@ -49,4 +49,4 @@ class Var(object):
 class Development(Var):
     LOGGER = True
     # Here for later purposes
-© 2020 GitHub, Inc.
+
