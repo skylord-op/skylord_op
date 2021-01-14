@@ -1,4 +1,3 @@
-﻿
 import os
 import sys
 import time
@@ -8,6 +7,9 @@ from telethon.sessions import StringSession
 
 from userbot.helper import function as simpdef
 from var import Var
+
+StartTime = time.time()
+skyversion = "2.0"
 
 os.system("pip install --upgrade pip")
 if Var.STRING_SESSION:
