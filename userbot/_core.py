@@ -36,7 +36,7 @@ async def send(event):
         await asyncio.sleep(DELETE_TIMEOUT)
         await event.delete()
     else:
-        await edit_or_reply(event, "File not found..... Kek")
+        await edit_or_reply(event, "CANT FOUND THE FILE THAT U R SEARCHING FOR.. PLZZ GIVE THE CORRECT FILE NAME TO SEND....")
 
 @bot.on(admin_cmd(pattern="install"))
 async def install(event):
@@ -55,14 +55,14 @@ async def install(event):
                 shortname = path1.stem
                 load_module(shortname.replace(".py", ""))
                 await event.edit(
-                    "Plugin successfully installed\n  `{}`".format(
+                    "UPGRADING THE NEW PLUGIN.....\n  `{}`".format(
                         os.path.basename(downloaded_file_name)
                     )
                 )
             else:
                 os.remove(downloaded_file_name)
                 await event.edit(
-                    "**Error!**\nPlugin cannot be installed!\n Or may have been pre-installed."
+                    "**ERROR DETECTED..!**\nPLUGIN WRONG... SED...!\n Or may have been pre-installed."
                 )
         except Exception as e:  # pylint:disable=C0103,W0703
             await event.edit(str(e))
@@ -80,7 +80,7 @@ async def unload(event):
         await event.edit(f"Successfully unloaded {shortname}")
     except Exception as e:
         await event.edit(
-            "Successfully unloaded {shortname}\n{}".format(
+            "Successfully deleted the plugin---> {shortname}\n{}".format(
                 shortname, str(e)
             )
         )
