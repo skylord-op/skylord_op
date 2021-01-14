@@ -1,6 +1,6 @@
 {
   "name": "SKYLORD-OP",
-  "description": "The best userbot made by @koi_nhi_apna. Made with Love And Phone And Hardwork and... ....For Support Join @Skylord_help_chat ",
+  "description": "SKYLORD UserBot Service...... Made with Love And Phone And Hardwork and... ....For Support Join @Skylord_help_chat ",
   "logo": "https://telegra.ph/file/a3cf0be8a8336aa3d1b1f.jpg ",
   
   
@@ -13,9 +13,10 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/SKYLORD-op/SKYLORD_op.git",
-  "website": "#hehehe",
-  "success_url": "https://t.me/SKYLORD_help_chat",
+  "repository": "https://t.me/SKYLORD_Userbot_Channel",
+  "website": "https://t.me/SKYLORD_help_Chat",
+  "success_url": "https://t.me/Koi_Nhi_Apna",
+  "stack": "container",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
@@ -162,28 +163,10 @@
       "required": false 
     }
   },
-  "addons": [
-    {
-      "plan": "heroku-postgresql",
-      "options": {
-        "version": "12"
-      }
-    }
-  ],
-  "buildpacks": [
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-  },{
-    "url":"https://github.com/amivin/aria2-heroku.git"
-  },{
-    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
-  },{
-     "url": "https://github.com/heroku/heroku-buildpack-apt.git"
-  },{
-    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
-  },{
-    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
-  },{
-    "url": "heroku/python"
+  "addons": [{
+   "plan": "heroku-postgresql",
+   "options": {
+    "version": "12"
+   }
   }]
-}
+ }
