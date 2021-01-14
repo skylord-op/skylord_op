@@ -7,6 +7,7 @@ from telethon.sessions import StringSession
 
 from userbot.helper import function as simpdef
 from var import Var
+from Var import Config
 
 StartTime = time.time()
 skyversion = "2.0"
