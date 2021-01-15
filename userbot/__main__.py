@@ -44,14 +44,7 @@ for name in files:
         load_module(shortname.replace(".py", ""))
 
 
-print(
-    
-  "  _______________________________________________________________
-      __     _    _   _     _   _        __     ____     _____ 
-    /    )   /  ,'    |    /    /      /    )   /    )   /    )
-----\-------/_.'------|---/----/------/----/---/___ /---/----/-
-     \     /  \       |  /    /      /    /   /    |   /    /  
-_(____/___/____\______|_/____/____/_(____/___/_____|__/____/___      IS READY TO USE! FOR CHECK YOUR BOT WORKING OR NOT PLEASE TYPE (.alive/.ping) ENJOY YOUR BOT! SKYLORD IS ACTIVATED.......... 
+print("SKYLORD IS READY TO USE! FOR CHECK YOUR BOT WORKING OR NOT PLEASE TYPE (.alive/.ping) ENJOY YOUR BOT! SKYLORD IS ACTIVATED.......... ")
                        /                                       
                    (_ /                ")                 
 
