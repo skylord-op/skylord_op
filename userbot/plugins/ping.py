@@ -5,7 +5,7 @@ from .. import ALIVE_NAME, CMD_HELP
 from ..utils import admin_cmd, edit_or_reply
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "SKYLORD User"
-kraken = borg.uid
+SKYLORD = borg.uid
 
 
 @bot.on(admin_cmd(pattern=f"hbping$", outgoing=True))
