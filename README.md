@@ -5,7 +5,7 @@
    <br>
    <br>
 </p>
-<h1>Skyload_Op</h1>
+<h1>Skylord_Op</h1>
 <b>Powerful, Smart And Simple Userbot In Telethon</b>
 <br>
 <br>
