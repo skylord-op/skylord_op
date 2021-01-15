@@ -44,7 +44,7 @@ async def _(event):
             await borg.send_file(
                 event.chat_id,
                 directory_name + ".zip",
-                caption="Zipped By [SKYLORD-OP](https://github.com/SKYLORD-OP-op/SKYLORD-OP_op)",
+                caption="Zipped By [SKYLORD-OP](https://github.com/skylord-op/skylord_op)",
                 force_document=True,
                 allow_cache=False,
                 reply_to=event.message.id,
