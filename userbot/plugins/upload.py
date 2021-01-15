@@ -167,9 +167,9 @@ async def _(event):
         end = datetime.now()
         # os.remove(input_str)
         ms = (end - start).seconds
-        await mone.edit("Uploaded in {} seconds.".format(ms))
+        await mone.edit("le lo free mai de dia bss {} seconds mai...".format(ms))
     else:
-        await mone.edit("6969: Sorry!! file Not Found, File Not Found")
+        await mone.edit("padhe likhe gawaar...file ka name sahi se daal...")
 
 
 def get_video_thumb(file, output=None, width=90):
@@ -252,7 +252,7 @@ async def _(event):
                     )
                 ],
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                    progress(d, t, mone, c_time, "trying to upload")
+                    progress(d, t, mone, c_time, "checking....")
                 ),
             )
         except Exception as e:
@@ -261,6 +261,6 @@ async def _(event):
             end = datetime.now()
             os.remove(input_str)
             ms = (end - start).seconds
-            await mone.edit("Uploaded in {} seconds.".format(ms))
+            await mone.edit("ye lo... le lo...de dia free mai..".format(ms))
     else:
-        await mone.edit("404: File Not Found")
+        await mone.edit("abay padhe likhe gawar.. file ka name toh sahi se daal...")
