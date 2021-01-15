@@ -1,7 +1,7 @@
 # This is a troll indeed ffs *facepalm*
 import asyncio
 
-from telethon.tl.functions.users import GetFullUserRequest
+from telethon.tl.function.users import GetFullUserRequest
 from telethon.tl.types import ChannelParticipantsAdmins
 
 from userbot.utils import admin_cmd
@@ -14,7 +14,7 @@ async def gbun(event):
     gbunVar = event.text
     gbunVar = gbunVar[6:]
     mentions = "`Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By Admin...\n`"
-    no_reason = "__Reason: DONT DARE TO MESS UO WITH SKYLORD OWNER"
+    no_reason = "__Reason: DONT DARE TO MESS UP WITH SKYLORD OWNER"
     await event.edit("**SKYLORD ON FIRE☠️**")
     asyncio.sleep(3.5)
     chat = await event.get_input_chat()
@@ -30,7 +30,7 @@ async def gbun(event):
         # make meself invulnerable cuz why not xD
         if idd == 924138714:
             await reply_message.reply(
-                "`Wait a second, This is my master!`\n**How dare you threaten to ban my master nigger!**\n\n__Your account has been hacked! Pay 69$ to my master__ [HellBoy](https://t.me/kraken_the_badass) __to release your account__😏"
+                "`Wait a second, This is my master!`\n**How dare you threaten to ban my master nigger!**\n\n__Your account has been hacked! Pay 69$ to my master__ [skylord](https://t.me/koi_nhi_apna) __to release your account__😏"
             )
         else:
             jnl = (
