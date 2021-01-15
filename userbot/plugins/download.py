@@ -12,7 +12,7 @@ from pySmartDL import SmartDL
 from userbot import ALIVE_NAME, CMD_HELP
 from userbot.utils import admin_cmd, humanbytes, progress, sudo_cmd
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "skylord User"
 
 
 @bot.on(admin_cmd(pattern="download(?: |$)(.*)", outgoing=True))
@@ -33,7 +33,7 @@ async def _(event):
                 reply_message,
                 Config.TMP_DOWNLOAD_DIRECTORY,
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                    progress(d, t, mone, c_time, "SKYLORD IS GETTING IT")
+                    progress(d, t, mone, c_time, "SKYLORD IS GETTING IT......")
                 ),
             )
         except Exception as e:  # pylint:disable=C0103,W0703
