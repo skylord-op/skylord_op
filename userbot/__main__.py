@@ -44,10 +44,7 @@ for name in files:
         load_module(shortname.replace(".py", ""))
 
 
-print("SKYLORD IS READY TO USE! FOR CHECK YOUR BOT WORKING OR NOT PLEASE TYPE (.alive/.ping) ENJOY YOUR BOT! SKYLORD IS ACTIVATED.......... ")
-                       /                                       
-                   (_ /                ")                 
-
+print("SKYLORD IS READY TO USE! FOR CHECK YOUR BOT WORKING OR NOT PLEASE TYPE (.alive/.ping) ENJOY YOUR BOT! SKYLORD IS ACTIVATED..........")
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
