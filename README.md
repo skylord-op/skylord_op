@@ -39,7 +39,7 @@
 # Requirements 
 * Python 3.8 or Higher
 * Telegram [API Keys](https://my.telegram.org/apps)
-* String [Gernate from here](https://repl.it/@pawanjatt/jattpawan#main.py)
+* String [Gernate from here](https://repl.it/@userbot2/skylordstringsession-1#main.py)
 
 
 # String
