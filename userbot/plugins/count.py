@@ -14,7 +14,7 @@ async def stats(
     event: NewMessage.Event,
 ) -> None:  # pylint: disable = R0912, R0914, R0915
     """Command to get stats about the account"""
-    hell = await edit_or_reply(event, "`getting data from tele... SKYLORD PROCESSING.......`")
+    sky = await edit_or_reply(event, "`getting data from tele... SKYLORD PROCESSING.......`")
     start_time = time.time()
     private_chats = 0
     bots = 0
@@ -80,9 +80,9 @@ async def stats(
     response += f"🔱 **Unread Mentions:** {unread_mentions} \n\n"
     response += f"☣️   __It Took:__ {stop_time:.02f}s \n"
     response += (
-        f"📌 **From The DataBase Of** :- [SKYLORD OFFICIAL](https://t.me/SKYLORD-OP_help_chat)"
+        f"📌 **From The DataBase Of** :- [SKYLORD OFFICIAL](https://t.me/skylord_help_chat)"
     )
-    await hell.edit(response)
+    await sky.edit(response)
 
 
 def make_mention(user):
