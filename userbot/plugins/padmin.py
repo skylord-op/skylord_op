@@ -21,7 +21,7 @@ async def _(event):
 
     animation_ttl = range(0, 20)
 
-    await event.edit("Promoting")
+    await event.edit("KAR RAHA HUN BSDK JLDI SE 10 RUPAY BHEJ.....")
 
     animation_chars = [
         "**Promoting User As Admin...**",
@@ -43,7 +43,7 @@ async def _(event):
         "**(8) Change Chat Info: ☑️**",
         "**(8) Change Chat Info: ✅**",
         "**Permission Granted Successfully**",
-        "**pRoMooTeD SuCcEsSfUlLy**",
+        "**HO GAYA BSDK 10 RUPAY DE JALDI**",
     ]
 
     for i in animation_ttl:
