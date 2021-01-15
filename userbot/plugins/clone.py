@@ -7,16 +7,16 @@ Syntax: .clone @username"""
 
 import html
 
-from telethon.tl import functions
-from telethon.tl.functions.users import GetFullUserRequest
+from telethon.tl import function
+from telethon.tl.function.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 
 from userbot import ALIVE_NAME, BIO_MSG, CMD_HELP
 from userbot.utils import admin_cmd
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "sky User"
 
-DEFAULTUSERBIO = str(BIO_MSG) if BIO_MSG else "ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt"
+DEFAULTUSERBIO = str(BIO_MSG) if BIO_MSG else "BAAP BAAP (SKYLORD-OP) HOTA HAI AUR BETA BETA...."
 BOTLOG_CHATID = Config.PRIVATE_GROUP_BOT_API_ID
 BOTLOG = True
 
@@ -61,12 +61,12 @@ async def _(event):
     )
     await event.delete()
     await borg.send_message(
-        event.chat_id, "**hey there me izz original .. **", reply_to=reply_message
+        event.chat_id, "**koun hai ye log kahan se aatay hai ye log.. .. **", reply_to=reply_message
     )
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID,
-            f"#CLONED\nSuccesfulley cloned [{first_name}](tg://user?id={user_id })",
+            f"#CLONED\nhello myself [{first_name}](tg://user?id={user_id })",
         )
 
 
@@ -87,7 +87,7 @@ async def _(event):
     await event.edit("i am  back")
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, f"#REVERT\nSuccesfully reverted back to your profile"
+            BOTLOG_CHATID, f"#REVERT\nbhai dil se bura lagta hai bhaai aise na kro....."
         )
 
 
