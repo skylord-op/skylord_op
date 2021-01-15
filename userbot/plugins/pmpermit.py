@@ -6,7 +6,7 @@ import os
 import time
 
 from telethon import events, functions
-from telethon.tl.functions.users import GetFullUserRequest
+from telethon.tl.function.users import GetFullUserRequest
 
 import userbot.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from userbot import ALIVE_NAME, CUSTOM_PMPERMIT
@@ -24,18 +24,18 @@ SKYLORDPIC = (
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 myid = bot.uid
-KRAKEN = (
+skylord = (
     str(CUSTOM_PMPERMIT)
     if CUSTOM_PMPERMIT
     else "**YOU HAVE TRESPASSED TO MY MASTERS INBOX** \n THIS IS ILLEGAL AND REGARDED AS CRIME"
 )
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hêll Usêr"
-USER_BOT_WARN_ZERO = "**You were spamming my sweet master's inbox, henceforth you have been blocked by my master's Hêllẞø†.**\n__Now GTFO, i'm busy__"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "skylord user bot "
+USER_BOT_WARN_ZERO = "**chutiye meri baat na man ne ka nateeza ho gaya tu block..\n_karwali khudki bezzati abb nikaal..hurr..."
 USER_BOT_NO_WARN = (
-    "Hello, This is **SKYLORD Úl†rã Pr¡va†e Security Protocol⚠️**.\n"
+    "Hello, This is **SKYLORD op security by @koi_nhi_apna....**.\n"
     f"This is my master {DEFAULTUSER}'s Inbox\n"
-    f"\n**{KRAKEN}**\n\n"
-    "To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥"
+    f"\n**{skylord}**\n\n"
+    "To start a valid conversation\n🔱Register Your Request!\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥"
 )
 
 if Var.PRIVATE_GROUP_ID is not None:
@@ -102,7 +102,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                         )
                     )
                     await asyncio.sleep(3)
-                    await event.client(functions.contacts.BlockRequest(chat.id))
+                    await event.client(function.contacts.BlockRequest(chat.id))
 
     @borg.on(admin_cmd(pattern="disallow ?(.*)"))
     async def approve_p_m(event):
@@ -207,7 +207,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         if PM_WARNS[chat_id] == Config.MAX_FLOOD_IN_P_M_s:
             r = await event.reply(USER_BOT_WARN_ZERO)
             await asyncio.sleep(3)
-            await event.client(functions.contacts.BlockRequest(chat_id))
+            await event.client(function.contacts.BlockRequest(chat_id))
             if chat_id in PREV_REPLY_MESSAGE:
                 await PREV_REPLY_MESSAGE[chat_id].delete()
             PREV_REPLY_MESSAGE[chat_id] = r
@@ -230,7 +230,7 @@ if Var.PRIVATE_GROUP_ID is not None:
             except:
                 return
         r = await borg.send_file(
-            event.chat_id, HELLPIC, caption=USER_BOT_NO_WARN, force_document=False
+            event.chat_id, SKYLORDPIC, caption=USER_BOT_NO_WARN, force_document=False
         )
         PM_WARNS[chat_id] += 1
         if chat_id in PREV_REPLY_MESSAGE:
@@ -247,6 +247,6 @@ async def hehehe(event):
     if event.is_private:
         if not pmpermit_sql.is_approved(chat.id):
             pmpermit_sql.approve(
-                chat.id, "**My Boss iz here.... It's your lucky day nibba😏**"
+                chat.id, "**KNOCK KNOCK...IDHAR DEKH LODE... WAAHAN KAHAN DEKH RHA... TERA BAAP AYAA.**"
             )
-            await borg.send_message(chat, "**Here comes my Master! Lucky you!!😏**")
+            await borg.send_message(chat, "**TERA BAAP AYAA..😏**")
