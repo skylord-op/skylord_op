@@ -61,7 +61,7 @@ if 1 == 1:
 
             except:
 
-                await event.edit("`Are you Comedy Me ?`")
+                await event.edit("`kaise ho?...mujhe dekhna band kroge mai pighal gaya...`")
 
                 return
 
@@ -73,6 +73,6 @@ if 1 == 1:
 
             else:
 
-                await event.edit("`No photo found of that Nigga , now u Die`")
+                await event.edit("`no dp... khopdi tod shalle ki khopdi todd....`")
 
                 return
