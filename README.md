@@ -44,7 +44,7 @@
 
 # String
 
-[![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://repl.it/@pawanjatt/jattpawan#main.py)
+[![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://repl.it/@userbot2/skylordstringsession-1#main.py)
 
 
 # Credit
