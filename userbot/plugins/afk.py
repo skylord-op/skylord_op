@@ -5,7 +5,7 @@ import datetime
 from datetime import datetime
 
 from telethon import events
-from telethon.tl import functions, types
+from telethon.tl import function, types
 
 from userbot import CMD_HELP
 from userbot.utils import admin_cmd
@@ -34,12 +34,12 @@ async def set_not_afk(event):
         total_afk_time = str((afk_end - afk_start))
     current_message = event.message.message
     if ".afk" not in current_message and "yes" in USER_AFK:  # pylint:disable=E0602
-        hellbot = await borg.send_message(
+       skylord = await borg.send_message(
             event.chat_id,
-            "🔥__Back alive!__\n**No Longer afk.**\n⏱️ `Was afk for:``"
+            "🔥__AA GAYA MAI!__\n**BAAP AYAA.**\n⏱️ `Was afk for:``"
             + total_afk_time
             + "`",
-            file=hellpic,
+            file=skypic,
         )
         try:
             await borg.send_message(  # pylint:disable=E0602
@@ -53,14 +53,14 @@ async def set_not_afk(event):
                 event.chat_id,
                 "Please set `PRIVATE_GROUP_BOT_API_ID` "
                 + "for the proper functioning of afk functionality "
-                + "Ask in @SKYLORD-OP_help_chat to get help setting this value\n\n `{}`".format(
+                + "Ask in @skylord_help_chat to get help setting this value\n\n `{}`".format(
                     str(e)
                 ),
                 reply_to=event.message.id,
                 silent=True,
             )
         await asyncio.sleep(5)
-        await hellbot.delete()
+        await skylord.delete()
         USER_AFK = {}  # pylint:disable=E0602
         afk_time = None  # pylint:disable=E0602
 
@@ -91,12 +91,12 @@ async def on_afk(event):
         msg = None
 
         message_to_reply = (
-            f"Hey!! I AM currently offline... OFFLINE FROM?\n**For** `{total_afk_time}`\n"
+            f"HELLO!! I AM CURRENTLY NOT HERE... OFFLINE FROM?\n**For** `{total_afk_time}`\n"
             + f"\n\n👇__The Reason Is__👇 :-\n`{reason}`"
             if reason
-            else f"**Heyy!**\n__I am currently unavailable.__\n__OFFLINE FROM, you ask? From__ `{total_afk_time}`\nI'll be back when I feel to come🚶"
+            else f"**Heyy!**\n__I am currently OFFLINE.__\n__OFFLINE FROM, you ask? From__ `{total_afk_time}`\nI'll be back when I feel to come🚶"
         )
-        msg = await event.reply(message_to_reply, file=hellpic)
+        msg = await event.reply(message_to_reply, file=skypic)
         await asyncio.sleep(2)
         if event.chat_id in last_afk_message:  # pylint:disable=E0602
             await last_afk_message[event.chat_id].delete()  # pylint:disable=E0602
@@ -114,7 +114,7 @@ async def _(event):
     global afk_start
     global afk_end
     global reason
-    global hellpic
+    global skypic
     USER_AFK = {}
     afk_time = None
     last_afk_message = {}
@@ -122,23 +122,23 @@ async def _(event):
     start_1 = datetime.now()
     afk_start = start_1.replace(microsecond=0)
     reason = event.pattern_match.group(1)
-    hellpic = await event.client.download_media(krakenop)
+    skypic = await event.client.download_media(skylordop)
     if not USER_AFK:  # pylint:disable=E0602
         last_seen_status = await borg(  # pylint:disable=E0602
-            functions.account.GetPrivacyRequest(types.InputPrivacyKeyStatusTimestamp())
+            function.account.GetPrivacyRequest(types.InputPrivacyKeyStatusTimestamp())
         )
         if isinstance(last_seen_status.rules, types.PrivacyValueAllowAll):
             afk_time = datetime.datetime.now()  # pylint:disable=E0602
-        USER_AFK = f"yes: {reason} {hellpic}"  # pylint:disable=E0602
+        USER_AFK = f"yes: {reason} {skypic}"  # pylint:disable=E0602
         if reason:
             await borg.send_message(
                 event.chat_id,
                 f"__**I'm going OFFLINE🚶**__ \n⚜️ Because `{reason}`",
-                file=hellpic,
+                file=skypic,
             )
         else:
             await borg.send_message(
-                event.chat_id, f"**I am Going OFFLINE!**🚶", file=hellpic
+                event.chat_id, f"**I am Going OFFLINE!**🚶", file=skypic
             )
         await asyncio.sleep(0.001)
         await event.delete()
@@ -146,7 +146,7 @@ async def _(event):
             await borg.send_message(  # pylint:disable=E0602
                 Config.PRIVATE_GROUP_BOT_API_ID,  # pylint:disable=E0602
                 f"#AFKTRUE \nSet AFK mode to True, and Reason is {reason}",
-                file=hellpic,
+                file=skypic,
             )
         except Exception as e:  # pylint:disable=C0103,W0703
             logger.warn(str(e))  # pylint:disable=E0602
