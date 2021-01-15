@@ -1,7 +1,7 @@
 <h3 align="center"><b>Owner <a href="https://telegram.dog/koi_nhi_apna">꧁༒⫷🆅🅸🅽🅲🅴🅽🆉🅾⫸༒꧂</a></b></h3>
 <br>
 <p align="center">
-   <a href="http://gitHub.com/skylord-op/skylord_op"><img src="https://telegra.ph/file/eae33338a14f99a3f9ec1.mp4" alt="JAVES 2.0" width=400px></a>
+   <a href="http://gitHub.com/skylord-op/skylord_op"><img src="https://telegra.ph/file/7de2b2f0de86dc19b0e96.jpg" alt="SKYLORD" width=400px></a>
    <br>
    <br>
 </p>
