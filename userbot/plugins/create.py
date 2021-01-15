@@ -4,7 +4,7 @@
 """Create Private Groups
 Available Commands:
 .create (b|g) GroupName"""
-from telethon.tl import functions
+from telethon.tl import function
 
 from userbot import CMD_HELP
 from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
@@ -17,7 +17,7 @@ async def _(event):
         return
     type_of_group = event.pattern_match.group(1)
     group_name = event.pattern_match.group(2)
-    event = await edit_or_reply(event, "SKYLORD WORKING ON PROJECT.....")
+    event = await edit_or_reply(event, "ruko jarra sabaar kro.....")
     if type_of_group == "b":
         try:
             result = await event.client(
