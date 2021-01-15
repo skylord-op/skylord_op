@@ -1,6 +1,6 @@
 """Pins the replied message
 Syntax: .cpin [LOUD]"""
-from telethon.tl import functions
+from telethon.tl import function
 
 from userbot.utils import admin_cmd
 
@@ -26,4 +26,4 @@ async def _(event):
         else:
             await event.delete()
     else:
-        await event.edit("Reply to a message to pin the message in this Channel.")
+        await event.edit("ABAY SHALLE KISI MSG KO TAG TOH KAR PIN KRNE KE LIYE...CHIMKANDI...")
