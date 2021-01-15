@@ -6,7 +6,7 @@ Will not work for already approved people.
 """
 import asyncio
 
-from telethon import functions
+from telethon import function
 
 import userbot.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from userbot import ALIVE_NAME
@@ -26,18 +26,18 @@ async def _(event):
         if event.is_private:
 
             PM = (
-                "`Hello. You are accessing the availabe menu of my peru master,`"
+                "`Hello. ruko jarra sabaar kro.. ,`"
                 f"{DEFAULTUSER}.\n"
-                "__Let's make this smooth and let me know why you are here.__\n"
-                "**Choose one of the following reasons why you are here:**\n\n"
-                "`1`. To chat with my master\n"
-                "`2`. To give your girlfriend number.\n"
-                "`3`. To enquire something\n"
+                "__mujhe dekhna band kroge? aur batao kyu aye ho yahaan?__\n"
+                "**Choose one of the following reasons?:**\n\n"
+                "`1`. To chat \n"
+                "`2`. To scold\n"
+                "`3`. To get help\n"
                 "`4`. To request something\n"
             )
             ONE = (
-                "__Okay. Your request has been registered. Do not spam my master's inbox.You can expect a reply within 24 light years. He is a busy man, unlike you probably.__\n\n"
-                "**⚠️ You will be blocked and reported if you spam  ⚠️**\n\n"
+                "__Okay. Your answer is recorded. Do not type anything until  my master allow u to msg in his inbox.You can expect a reply very soon.. He is a busy man...hehehhe..__\n\n"
+                "**⚠️ You will be blocked and reported if u dont follow my words...  ⚠️**\n\n"
                 "__Use__ `/start` __to go back to the main menu.__"
             )
             TWO = "**So uncool, this is not your home. Go bother someone else. You have been blocked and reported until further notice.**"
@@ -64,14 +64,14 @@ async def _(event):
                     if not response.text == "/start":
                         await borg.send_message(chat, TWO)
                         await asyncio.sleep(3)
-                        await event.client(functions.contacts.BlockRequest(chat_id))
+                        await event.client(function.contacts.BlockRequest(chat_id))
             elif y == "2":
                 await borg.send_message(chat, LWARN)
                 response = await conv.get_response(chat)
                 if not response.text == "/start":
                     await borg.send_message(chat, TWO)
                     await asyncio.sleep(3)
-                    await event.client(functions.contacts.BlockRequest(chat_id))
+                    await event.client(function.contacts.BlockRequest(chat_id))
 
             elif y == "3":
                 await borg.send_message(chat, FOUR)
@@ -85,7 +85,7 @@ async def _(event):
                     if not response.text == "/start":
                         await borg.send_message(chat, TWO)
                         await asyncio.sleep(3)
-                        await event.client(functions.contacts.BlockRequest(chat_id))
+                        await event.client(function.contacts.BlockRequest(chat_id))
             elif y == "4":
                 await borg.send_message(chat, FIVE)
                 response = await conv.get_response(chat)
@@ -95,11 +95,11 @@ async def _(event):
                     if not response.text == "/start":
                         await borg.send_message(chat, TWO)
                         await asyncio.sleep(3)
-                        await event.client(functions.contacts.BlockRequest(chat_id))
+                        await event.client(function.contacts.BlockRequest(chat_id))
             else:
                 await borg.send_message(
                     chat,
-                    "`You have entered an invalid command. Please send /start again or do not send another message if you do not wish to be blocked and reported.`",
+                    "`bhkk...hurr.. ruk chutiye wait kr wrnaa block kr dunga...`",
                 )
                 response = await conv.get_response(chat)
                 z = response.text
@@ -109,4 +109,4 @@ async def _(event):
                     if not response.text == "/start":
                         await borg.send_message(chat, TWO)
                         await asyncio.sleep(3)
-                        await event.client(functions.contacts.BlockRequest(chat_id))
+                        await event.client(function.contacts.BlockRequest(chat_id))
