@@ -8,20 +8,20 @@ Userbot module to help you manage a group
 
 from asyncio import sleep
 
-from telethon import functions
+from telethon import function
 from telethon.errors import (
     BadRequestError,
     ImageProcessFailedError,
     PhotoCropSizeSmallError,
 )
 from telethon.errors.rpcerrorlist import UserAdminInvalidError, UserIdInvalidError
-from telethon.tl.functions.channels import (
+from telethon.tl.function.channels import (
     EditAdminRequest,
     EditBannedRequest,
     EditPhotoRequest,
 )
-from telethon.tl.functions.messages import UpdatePinnedMessageRequest
-from telethon.tl.functions.users import GetFullUserRequest
+from telethon.tl.function.messages import UpdatePinnedMessageRequest
+from telethon.tl.function.users import GetFullUserRequest
 from telethon.tl.types import (
     ChatAdminRights,
     ChatBannedRights,
@@ -207,23 +207,23 @@ async def ban(bon):
     user, reason = await get_user_from_event(bon)
     if not user:
         return
-    hellevent = await edit_or_reply(bon, "`SKYLORD IZZ HERE TO BLOCK U...`")
+    skyevent = await edit_or_reply(bon, "`SKYLORD IZZ HERE TO BLOCK U...`")
     try:
         await bon.client(EditBannedRequest(bon.chat_id, user.id, BANNED_RIGHTS))
     except BadRequestError:
-        await hellevent.edit(NO_PERM)
+        await skyevent.edit(NO_PERM)
         return
     try:
         reply = await bon.get_reply_message()
         if reply:
             await reply.delete()
     except BadRequestError:
-        await hellevent.edit("`I ain't got msg deleting right. But still Banned!`")
+        await skyevent.edit("`I ain't got msg deleting right. But still Banned!`")
         return
     if reason:
-        await hellevent.edit(f"`{str(user.id)}` is banned !!\nReason: {reason}")
+        await skyevent.edit(f"`{str(user.id)}` is banned !!\nReason: {reason}")
     else:
-        await hellevent.edit(f"{str(user.id)} is banned😏 !!")
+        await skyevent.edit(f"{str(user.id)} is banned😏 !!")
     if BOTLOG:
         await bon.client.send_message(
             BOTLOG_CHATID,
@@ -250,7 +250,7 @@ async def nothanos(unbon):
         return
     try:
         await unbon.client(EditBannedRequest(unbon.chat_id, user.id, UNBAN_RIGHTS))
-        await hellevent.edit("```Unbanned Successfully. Granting another chance🚶.```")
+        await skyevent.edit("```Unbanned Successfully. Granting another chance🚶.```")
         if BOTLOG:
             await unbon.client.send_message(
                 BOTLOG_CHATID,
@@ -401,7 +401,7 @@ async def endmute(event):
                 unmute(user.id, event.chat_id)
             else:
                 result = await event.client(
-                    functions.channels.GetParticipantRequest(
+                    function.channels.GetParticipantRequest(
                         channel=event.chat_id, user_id=user.id
                     )
                 )
@@ -481,19 +481,19 @@ async def kick(usr):
     if not user:
         await edit_or_reply(usr, "`Couldn't fetch user.`")
         return
-    hellevent = await edit_or_reply(usr, "`DONT DARE TO CHALLENGE SKYLORD'S MASTER...`")
+    skyevent = await edit_or_reply(usr, "`DONT DARE TO CHALLENGE SKYLORD'S MASTER...`")
     try:
         await usr.client.kick_participant(usr.chat_id, user.id)
         await sleep(0.5)
     except Exception as e:
-        await hellevent.edit(NO_PERM + f"\n{str(e)}")
+        await skyevent.edit(NO_PERM + f"\n{str(e)}")
         return
     if reason:
-        await hellevent.edit(
+        await skyevent.edit(
             f"`MISSION SUCCESSFULL` [{user.first_name}](tg://user?id={user.id})`!`\nReason: {reason}"
         )
     else:
-        await hellevent.edit(f"`MISSION SUCCESSFULL` [{user.first_name}](tg://user?id={user.id})`!`")
+        await skyevent.edit(f"`MISSION SUCCESSFULL` [{user.first_name}](tg://user?id={user.id})`!`")
     if BOTLOG:
         await usr.client.send_message(
             BOTLOG_CHATID,
