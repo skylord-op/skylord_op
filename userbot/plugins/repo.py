@@ -16,7 +16,7 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "githubs":
+    if input_str == "repo":
 
         await event.edit(input_str)
 
