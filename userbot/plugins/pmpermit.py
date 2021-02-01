@@ -6,7 +6,7 @@ import os
 import time
 
 from telethon import events, functions
-from telethon.tl.function.users import GetFullUserRequest
+from telethon.tl.functions.users import GetFullUserRequest
 
 import userbot.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from userbot import ALIVE_NAME, CUSTOM_PMPERMIT
